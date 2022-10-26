@@ -169,7 +169,7 @@ nav ul li a:hover::after {
 
 .tab-contents i {
   color: var(--main-color);
-  font-size: 4.5rem;
+  font-size: 4rem;
 }
 
 .tab-contents.active-tab {
@@ -179,6 +179,7 @@ nav ul li a:hover::after {
 .skills-icon {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 3rem;
 }
 
@@ -369,7 +370,7 @@ nav .fas {
   }
 
   .header-text {
-    margin-top: 70%;
+    margin-top: 90%;
     font-size: 1.6rem;
     text-align: center;
   }
@@ -431,6 +432,11 @@ nav .fas {
   .tab-links {
     font-size: 1.6rem;
     margin-right: 2rem;
+  }
+
+  .tab-contents i {
+    color: var(--main-color);
+    font-size: 3rem;
   }
 
   .copyright {
