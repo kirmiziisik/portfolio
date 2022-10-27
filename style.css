@@ -359,8 +359,8 @@ nav .fas {
 
 @media only screen and (max-width: 600px) {
   #header {
-    background-image: url(images/background2.jpg);
-    background-position: 50%;
+    background-image: url(images/background.jpg);
+    background-position: 50% 30%;
     background-size: 60%;
     height: 90vh;
   }
@@ -375,11 +375,13 @@ nav .fas {
     text-align: center;
   }
   .header-text h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
+
   nav .fas {
     display: block;
     font-size: 2.5rem;
+    margin-top: 1rem;
   }
 
   nav ul {
