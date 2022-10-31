@@ -106,7 +106,7 @@ nav ul li a:hover::after {
 }
 
 .about-col-1 img {
-  width: 100%;
+  width: 85%;
   border-radius: 1.5rem;
 }
 
@@ -209,7 +209,7 @@ nav ul li a:hover::after {
 
 .work-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 4rem;
   margin-top: 5rem;
 }
@@ -222,6 +222,7 @@ nav ul li a:hover::after {
 
 .work img {
   width: 100%;
+  height: 100%;
   border-radius: 1rem;
   display: block;
   transition: transform 0.5s;
@@ -352,12 +353,22 @@ nav ul li a:hover::after {
   font-size: 1.6rem;
 }
 
-/* -----------css for small screen----------------- */
+/* -----------media query----------------- */
 nav .fas {
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
+  .header-text {
+    margin-top: 25%;
+    font-size: 2rem;
+  }
+  .header-text h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 950px) {
   #header {
     background-image: url(images/background.jpg);
     background-position: 50% 30%;
@@ -365,8 +376,71 @@ nav .fas {
     height: 90vh;
   }
 
+  .header-text {
+    margin-top: 70%;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .header-text h1 {
+    font-size: 3.5rem;
+  }
+
   .logo {
     width: 20rem;
+  }
+
+  nav ul li a {
+    font-size: 1.4rem;
+  }
+
+  .sub-title {
+    font-size: 4rem;
+  }
+
+  .work-list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0.8rem 0.8rem;
+  }
+
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+  }
+  .about-col-1 {
+    margin-bottom: 3rem;
+  }
+  .about-col-1 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .about-col-1 img {
+    width: 40%;
+  }
+  .about-col-2 .sub-title {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .work-list {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  #header {
+    background-image: url(images/background.jpg);
+    background-position: 50% 30%;
+    background-size: 60%;
+    height: 90vh;
   }
 
   .header-text {
@@ -410,25 +484,6 @@ nav .fas {
 
   .sub-title {
     font-size: 4rem;
-  }
-
-  .about-col-1,
-  .about-col-2 {
-    flex-basis: 100%;
-  }
-  .about-col-1 {
-    margin-bottom: 3rem;
-  }
-  .about-col-1 {
-    font-size: 1.4rem;
-    text-align: center;
-  }
-
-  .about-col-1 img {
-    width: 60%;
-  }
-  .about-col-2 .sub-title {
-    text-align: center;
   }
 
   .tab-links {
