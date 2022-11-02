@@ -340,15 +340,11 @@ nav ul li a:hover::after {
   transform: translateY(-5px);
 }
 
-.btn.btn2 {
-  display: inline-block;
-  background-color: var(--main-color);
-}
-
 .copyright {
   width: 100%;
   text-align: center;
   padding: 2.5rem 0;
+  margin-top: 6rem;
   background-color: #262626;
   font-weight: 300;
   font-size: 1.6rem;
