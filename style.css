@@ -112,11 +112,12 @@ nav ul li a:hover::after {
 
 .about-col-2 {
   flex-basis: 60%;
+  font-size: 1.8rem;
 }
 
 .about-col-2 > p {
   margin-top: 1rem;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 .sub-title {
