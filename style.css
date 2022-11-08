@@ -7,7 +7,7 @@
 
 :root {
   --main-color: #008cff;
-  --light-grey: #e3e3e3;
+  --light-grey: #ededed;
 }
 
 html {
@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  background: #141414;
+  background: #080808;
   color: var(--light-grey);
 }
 
