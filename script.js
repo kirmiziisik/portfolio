@@ -4,6 +4,7 @@ const contents = document.querySelectorAll(".tab-contents");
 const sideMenu = document.getElementById("side-menu");
 const iconX = document.querySelector(".fa-xmark");
 const iconBars = document.querySelector(".fa-bars");
+const year = document.querySelector(".year");
 
 tabTitles.addEventListener("click", (e) => {
   const id = e.target.dataset.id;
@@ -28,3 +29,5 @@ iconBars.addEventListener("click", () => {
 iconX.addEventListener("click", () => {
   sideMenu.style.right = "-200px";
 });
+
+year.textContent = new Date().getFullYear();
